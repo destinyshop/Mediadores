@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Lo-Fi</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+        }
+
+        .background {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://moewalls.com/wp-content/uploads/2023/02/lofi-cozy-house-rainy-night-thumb-728x410.jpg');
+            background-size: cover;
+            filter: blur(10px);
+            z-index: -1;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+            padding-bottom: 0.5em;
+            position: relative;
+            display: inline-block;
+            margin: 1em 0;
+        }
+
+        .description {
+            text-align: left;
+            max-width: 800px;
+            margin: 0 auto 2em;
+            padding-left: 1em;
+            position: relative;
+        }
+
+        .links {
+            text-align: center;
+            margin-top: 2em;
+            position: relative;
+        }
+
+        .links a {
+            display: block;
+            margin-bottom: 1em;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        .links a:hover {
+            color: #ff6363;
+        }
+
+        @media screen and (max-width: 600px) {
+            .description {
+                max-width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        .line {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(to bottom, #ffcccc, #ccccff);
+            z-index: -1;
+            animation: changeColor 10s linear infinite;
+        }
+
+        @keyframes changeColor {
+            0% {
+                background: linear-gradient(to bottom, #ffcccc, #ccccff);
+            }
+
+            50% {
+                background: linear-gradient(to bottom, #ccccff, #ffcccc);
+            }
+
+            100% {
+                background: linear-gradient(to bottom, #ffcccc, #ccccff);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="content">
+        <div class="description">
+            <div class="line"></div>
+            <h1>¿Qué es un mediador?</h1>
+            <p>Un mediador es alguien que se encarga de facilitar y asegurar que una transacción, ya sea una compra,
+                venta o intercambio, se realice de manera exitosa y sin estafas. Su función principal es garantizar la
+                seguridad de las cuentas y asegurarse de que el comprador reciba las cuentas una vez que el pago haya
+                sido completado. La presencia de un mediador en la comunidad proporciona mayor seguridad y evita
+                pérdidas de cuentas y decepciones. Es importante destacar que los mediadores son los responsables
+                designados de la comunidad, como los curadores y líderes. Es obligatorio utilizar un mediador al hacer
+                cualquier tipo de transacción o intercambio con otra persona.</p>
+        </div>
+        <div class="links">
+            <div class="line"></div>
+            <h1>Verificaciones:</h1>
+            <a href="http://aminoapps.com/p/4fqitb">http://aminoapps.com/p/4fqitb</a>
+        </div>
+        <div class="links">
+            <div class="line"></div>
+            <h1>Mediadores / Líderes:</h1>
+            <a href="http://aminoapps.com/p/uqpt2r">Rain</a>
+            <a href="http://aminoapps.com/p/557af6u">El fukin licha</a>
+            <a href="http://aminoapps.com/p/q6i60f">Kyo</a>
+        </div>
+    </div>
+</body>
+
+</html>
